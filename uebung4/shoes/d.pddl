@@ -15,9 +15,9 @@
   )
 
   (:action putOnShoe
-   :parameters (todo)
-   :precondition (todo)
-   :effect (todo)
+   :parameters (?f - foot)
+   :precondition (and (hasSock ?f) (not (hasShoe ?f)) )
+   :effect (hasShoe ?f)
   )
 
 )
